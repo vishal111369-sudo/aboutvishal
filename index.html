@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishal Singh — Customer Success & Retention Leader</title>
-  <meta name="description" content="Vishal Singh — Customer Success, CRM & Retention leader with 14+ years turning complex B2B products into recurring revenue. PMP &amp; CSPO certified. Based in Hyderabad; open to remote/hybrid CS leadership roles." />
+  <meta name="description" content="Vishal Singh — Customer Success, CRM & Retention leader with 14+ years turning complex B2B products into recurring revenue. PMP &amp; CSPO certified. Hyderabad; open to remote/hybrid CS leadership roles." />
   <link rel="canonical" href="https://aboutvishal.equibytetechnologies.com/" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="profile" />
@@ -16,132 +16,140 @@
   <link rel="icon" type="image/png" href="logo-mark-blue.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root{
-      --bg:#080b16; --bg-2:#0b1020; --surface:#10162b; --surface-2:#141d38;
-      --border:rgba(255,255,255,.08); --border-2:rgba(255,255,255,.14);
-      --text:#eaeefb; --muted:#9aa6c4; --muted-2:#6f7c9c;
-      --brand:#3b82f6; --brand-2:#6d5cf7; --brand-3:#22d3ee; --good:#34d399;
-      --radius:16px; --maxw:1080px;
-      --font-head:"Space Grotesk","Inter",system-ui,sans-serif;
-      --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --bg:#ffffff; --bg-alt:#f6f7f9; --card:#ffffff;
+      --ink:#141b2e; --ink-2:#3b4457; --muted:#6b7488; --line:#e7eaf0;
+      --accent:#4f46e5; --accent-2:#0ea5e9; --accent-soft:#eef0fe; --good:#0d9f6e; --good-soft:#e7f7f0;
+      --radius:16px; --shadow:0 10px 30px rgba(20,27,46,.08); --shadow-lg:0 30px 70px rgba(20,27,46,.14);
+      --maxw:1080px; --head:"Fraunces",Georgia,serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
     }
     *{box-sizing:border-box;}
     html{scroll-behavior:smooth;}
-    body{margin:0;font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-    body::before{content:"";position:fixed;inset:0;background:radial-gradient(620px 420px at 78% -8%,rgba(109,92,247,.18),transparent 60%),radial-gradient(720px 520px at 12% 0%,rgba(59,130,246,.16),transparent 60%);pointer-events:none;z-index:0;}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;position:relative;z-index:1;}
+    body{margin:0;font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
     a{color:inherit;text-decoration:none;}
-    h1,h2,h3,h4{font-family:var(--font-head);font-weight:600;line-height:1.12;letter-spacing:-.02em;margin:0;}
+    h1,h2,h3,h4{font-family:var(--head);font-weight:600;line-height:1.1;letter-spacing:-.01em;margin:0;}
     p{margin:0;}
-    .eyebrow{display:inline-block;font-family:var(--font-head);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-3);margin-bottom:14px;font-weight:600;}
-    .gradient-text{background:linear-gradient(100deg,#fff 10%,#bcd0ff 45%,var(--brand) 75%,var(--brand-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+    img{max-width:100%;display:block;}
+    .eyebrow{display:inline-block;font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
     .muted{color:var(--muted);}
-    /* buttons */
-    .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:500;font-size:15px;padding:12px 22px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap;}
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .15s,box-shadow .2s,background .2s,color .2s;white-space:nowrap;}
     .btn:hover{transform:translateY(-1px);}
-    .btn-primary{background:linear-gradient(100deg,var(--brand),var(--brand-2));color:#fff;box-shadow:0 10px 30px rgba(59,130,246,.35);}
-    .btn-ghost{background:rgba(255,255,255,.04);color:var(--text);border-color:var(--border-2);}
-    .btn-ghost:hover{background:rgba(255,255,255,.08);}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(79,70,229,.28);}
+    .btn-primary:hover{background:#4338ca;}
+    .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);}
+    .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
     /* header */
-    .site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(8,11,22,.72);border-bottom:1px solid var(--border);}
-    .nav{display:flex;align-items:center;gap:26px;height:66px;}
-    .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:600;font-size:17px;white-space:nowrap;}
-    .brand .dot{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;}
-    .nav-links{display:flex;gap:24px;margin-left:14px;}
-    .nav-links a{color:var(--muted);font-size:15px;}
-    .nav-links a:hover{color:var(--text);}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+    .nav{display:flex;align-items:center;gap:26px;height:68px;}
+    .brand{display:flex;align-items:center;gap:10px;font-family:var(--head);font-weight:600;font-size:18px;}
+    .brand .dot{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-family:var(--body);font-size:13px;font-weight:700;letter-spacing:.02em;}
+    .nav-links{display:flex;gap:24px;margin-left:12px;}
+    .nav-links a{font-family:var(--body);color:var(--ink-2);font-size:15px;font-weight:500;}
+    .nav-links a:hover{color:var(--accent);}
     .nav-cta{margin-left:auto;}
-    .menu-toggle{display:none;background:none;border:0;color:var(--text);font-size:26px;cursor:pointer;}
+    .menu-toggle{display:none;background:none;border:0;color:var(--ink);font-size:26px;cursor:pointer;}
     /* hero */
-    .hero{padding:70px 0 40px;}
-    .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;}
-    .avatar-wrap{position:relative;width:200px;height:200px;}
-    .avatar{width:200px;height:200px;border-radius:50%;object-fit:cover;border:2px solid var(--border-2);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block;background:var(--surface);}
-    .avatar-fallback{width:200px;height:200px;border-radius:50%;display:none;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;font-size:64px;color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand-2));border:2px solid var(--border-2);box-shadow:0 20px 50px rgba(0,0,0,.5);}
-    .hero h1{font-size:clamp(34px,5vw,52px);margin-bottom:12px;}
-    .hero .role{font-family:var(--font-head);font-size:clamp(17px,2.4vw,22px);color:var(--muted);margin-bottom:16px;}
-    .hero .role b{color:var(--text);font-weight:500;}
-    .hero .lead{color:var(--muted);font-size:17px;max-width:620px;}
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px;}
-    .chip{font-family:var(--font-head);font-size:13px;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:rgba(255,255,255,.02);}
-    .chip.otw{color:var(--good);border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08);display:inline-flex;align-items:center;gap:7px;}
-    .chip.otw::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 10px var(--good);}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+    .hero{padding:72px 0 56px;}
+    .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center;}
+    .hero h1{font-size:clamp(40px,6vw,64px);margin-bottom:14px;letter-spacing:-.02em;}
+    .hero .role{font-family:var(--body);font-size:clamp(17px,2.3vw,21px);color:var(--ink-2);font-weight:500;margin-bottom:18px;}
+    .hero .role b{color:var(--accent);font-weight:600;}
+    .hero .lead{font-family:var(--body);color:var(--muted);font-size:17px;max-width:560px;}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 4px;}
+    .chip{font-family:var(--body);font-size:13px;font-weight:500;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:#fff;}
+    .chip.otw{color:var(--good);border-color:#bfe9d6;background:var(--good-soft);display:inline-flex;align-items:center;gap:7px;}
+    .chip.otw::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good);}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
+    /* photo */
+    .photo-card{position:relative;}
+    .photo{width:320px;height:390px;object-fit:cover;border-radius:22px;box-shadow:var(--shadow-lg);border:1px solid var(--line);background:var(--bg-alt);}
+    .photo-fallback{width:320px;height:390px;border-radius:22px;display:none;align-items:center;justify-content:center;font-family:var(--head);font-weight:700;font-size:96px;color:#fff;background:linear-gradient(160deg,var(--accent),var(--accent-2));box-shadow:var(--shadow-lg);}
+    .photo-badge{position:absolute;left:-18px;bottom:26px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-family:var(--body);}
+    .photo-badge .n{font-family:var(--head);font-size:20px;font-weight:700;color:var(--accent);}
+    .photo-badge .l{font-size:12px;color:var(--muted);}
     /* stats */
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;}
-    .stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center;}
-    .stat .big{font-family:var(--font-head);font-size:28px;font-weight:600;background:linear-gradient(100deg,#fff,var(--brand));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-    .stat .cap{color:var(--muted);font-size:13px;margin-top:4px;}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px;}
+    .stat{background:var(--bg-alt);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+    .stat .big{font-family:var(--head);font-size:30px;font-weight:700;color:var(--ink);}
+    .stat .cap{font-family:var(--body);color:var(--muted);font-size:13px;margin-top:4px;}
     /* sections */
-    .section{padding:64px 0;}
-    .shead{margin-bottom:34px;max-width:720px;}
-    .shead h2{font-size:clamp(26px,4vw,36px);margin-bottom:12px;}
-    .shead p{color:var(--muted);font-size:17px;}
+    .section{padding:66px 0;}
+    .section.alt{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+    .shead{max-width:720px;margin-bottom:36px;}
+    .shead h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px;}
+    .shead p{font-family:var(--body);color:var(--muted);font-size:17px;}
     /* about */
-    .about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:start;}
-    .about-grid p{color:var(--muted);font-size:16px;margin-bottom:14px;}
-    .facts{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
-    .facts .row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);font-size:14px;}
+    .about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start;}
+    .about-grid p{font-family:var(--body);color:var(--ink-2);font-size:16px;margin-bottom:15px;}
+    .facts{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);}
+    .facts .row{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-family:var(--body);font-size:14px;}
     .facts .row:last-child{border-bottom:0;}
-    .facts .k{color:var(--muted-2);} .facts .v{color:var(--text);text-align:right;font-weight:500;}
+    .facts .k{color:var(--muted);} .facts .v{color:var(--ink);font-weight:600;text-align:right;}
     /* timeline */
-    .timeline{position:relative;padding-left:28px;}
-    .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand),transparent);}
-    .job{position:relative;margin-bottom:30px;}
-    .job::before{content:"";position:absolute;left:-28px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--brand);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--brand);}
-    .job .when{font-family:var(--font-head);font-size:13px;color:var(--brand-3);}
-    .job h3{font-size:19px;margin:4px 0 2px;}
-    .job .co{color:var(--muted);font-size:14px;margin-bottom:10px;}
-    .job ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;}
+    .timeline{position:relative;padding-left:30px;}
+    .timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--line);}
+    .job{position:relative;margin-bottom:32px;}
+    .job:last-child{margin-bottom:0;}
+    .job::before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 2px var(--accent);}
+    .job .when{font-family:var(--body);font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.02em;}
+    .job h3{font-size:21px;margin:5px 0 2px;}
+    .job .co{font-family:var(--body);color:var(--muted);font-size:14px;margin-bottom:10px;}
+    .job ul{margin:0;padding-left:18px;font-family:var(--body);color:var(--ink-2);font-size:15px;}
     .job ul li{margin-bottom:6px;}
     /* cards */
     .grid{display:grid;gap:20px;}
     .grid-2{grid-template-columns:repeat(2,1fr);}
-    .grid-3{grid-template-columns:repeat(3,1fr);}
-    .card{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:transform .2s,border-color .2s,box-shadow .2s;position:relative;overflow:hidden;}
-    .card:hover{transform:translateY(-3px);border-color:var(--border-2);box-shadow:0 24px 60px rgba(0,0,0,.45);}
-    .card .tag{position:absolute;top:16px;right:16px;font-size:11px;border-radius:999px;padding:3px 10px;}
-    .tag.live{color:var(--good);border:1px solid rgba(52,211,153,.3);background:rgba(52,211,153,.08);}
-    .tag.build{color:var(--brand-3);border:1px solid rgba(34,211,238,.3);background:rgba(34,211,238,.08);}
-    .card .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.25);margin-bottom:16px;font-size:22px;}
-    .card h3{font-size:19px;margin-bottom:8px;}
-    .card p{color:var(--muted);font-size:15px;}
-    .card .link{display:inline-block;margin-top:14px;color:var(--brand-3);font-size:14px;font-family:var(--font-head);}
+    .grid-4{grid-template-columns:repeat(4,1fr);}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .2s,box-shadow .2s,border-color .2s;position:relative;box-shadow:var(--shadow);}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d6dae6;}
+    .card .tag{position:absolute;top:18px;right:18px;font-family:var(--body);font-size:11px;font-weight:600;border-radius:999px;padding:3px 10px;}
+    .tag.live{color:var(--good);background:var(--good-soft);}
+    .tag.build{color:var(--accent);background:var(--accent-soft);}
+    .card .ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);font-size:22px;margin-bottom:16px;}
+    .card h3{font-size:20px;margin-bottom:8px;}
+    .card p{font-family:var(--body);color:var(--muted);font-size:15px;}
+    .card .link{font-family:var(--body);display:inline-block;margin-top:14px;color:var(--accent);font-size:14px;font-weight:600;}
     /* skills */
     .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-    .skillbox{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;}
-    .skillbox h4{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand-3);margin-bottom:12px;}
+    .skillbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow);}
+    .skillbox h4{font-family:var(--body);font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:14px;}
     .skillbox .tags{display:flex;flex-wrap:wrap;gap:8px;}
-    .skillbox .tags span{font-size:13px;color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:5px 11px;background:rgba(255,255,255,.02);}
+    .skillbox .tags span{font-family:var(--body);font-size:13px;color:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:5px 11px;background:var(--bg-alt);}
     /* certs */
-    .certs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-    .cert{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center;}
+    .certs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+    .cert{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;box-shadow:var(--shadow);}
     .cert .ic{font-size:26px;}
-    .cert h4{font-size:15px;margin:10px 0 3px;}
-    .cert .iss{color:var(--muted-2);font-size:12px;}
-    .cert .verify{display:inline-block;margin-top:10px;font-size:12px;color:var(--brand-3);font-family:var(--font-head);}
+    .cert h4{font-size:17px;margin:10px 0 3px;}
+    .cert .iss{font-family:var(--body);color:var(--muted);font-size:12px;}
+    .cert .verify{font-family:var(--body);display:inline-block;margin-top:10px;font-size:12px;font-weight:600;color:var(--accent);}
     /* contact */
-    .cta-band{border:1px solid var(--border-2);border-radius:24px;padding:48px;background:radial-gradient(600px 300px at 80% 10%,rgba(109,92,247,.22),transparent),linear-gradient(180deg,var(--surface-2),var(--bg-2));text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.45);}
-    .cta-band h2{font-size:clamp(26px,4vw,38px);margin-bottom:12px;}
-    .cta-band p{color:var(--muted);margin-bottom:22px;font-size:17px;}
+    .contact-band{background:linear-gradient(135deg,#141b2e,#25305a);border-radius:26px;padding:52px;text-align:center;color:#fff;box-shadow:var(--shadow-lg);}
+    .contact-band .eyebrow{color:#a9b4ff;}
+    .contact-band h2{color:#fff;font-size:clamp(28px,4vw,40px);margin-bottom:12px;}
+    .contact-band p{font-family:var(--body);color:#c4cbe0;margin-bottom:24px;font-size:17px;}
     .contact-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
-    .contact-list{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;margin-top:22px;color:var(--muted);font-size:14px;}
-    .contact-list a{color:var(--muted);} .contact-list a:hover{color:var(--text);}
+    .btn-white{background:#fff;color:var(--ink);}
+    .btn-white:hover{background:#eef0fe;color:var(--accent);}
+    .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.4);}
+    .btn-outline:hover{border-color:#fff;}
+    .contact-list{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;margin-top:24px;font-family:var(--body);color:#c4cbe0;font-size:14px;}
+    .contact-list a{color:#c4cbe0;} .contact-list a:hover{color:#fff;}
     /* footer */
-    .foot{border-top:1px solid var(--border);padding:30px 0;margin-top:20px;text-align:center;color:var(--muted-2);font-size:13px;position:relative;z-index:1;}
-    .foot a{color:var(--muted-2);}
-    @media(max-width:820px){
-      .hero-grid{grid-template-columns:1fr;text-align:center;gap:24px;justify-items:center;}
-      .about-grid{grid-template-columns:1fr;}
-      .grid-3,.grid-2,.skills-grid,.certs{grid-template-columns:1fr;}
-      .stats{grid-template-columns:1fr 1fr;}
+    .foot{padding:30px 0;text-align:center;font-family:var(--body);color:var(--muted);font-size:13px;}
+    .foot a{color:var(--accent);}
+    @media(max-width:860px){
+      .hero-grid{grid-template-columns:1fr;gap:36px;}
+      .photo-card{order:-1;justify-self:center;}
+      .about-grid,.skills-grid,.grid-2{grid-template-columns:1fr;}
+      .stats,.certs{grid-template-columns:1fr 1fr;}
       .nav-links{display:none;}
       .menu-toggle{display:block;margin-left:auto;}
-      .nav-links.open{display:flex;flex-direction:column;position:absolute;top:66px;left:0;right:0;background:var(--bg-2);padding:16px 24px;border-bottom:1px solid var(--border);gap:14px;z-index:60;}
+      .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:#fff;padding:16px 24px;border-bottom:1px solid var(--line);gap:14px;z-index:60;box-shadow:var(--shadow);}
       .nav-cta{display:none;}
-      .certs{grid-template-columns:1fr 1fr;}
+      .contact-band{padding:36px 22px;}
     }
   </style>
 </head>
@@ -168,17 +176,13 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div class="hero-grid">
-        <div class="avatar-wrap">
-          <img class="avatar" src="vishal.jpg" alt="Vishal Singh" onerror="this.style.display='none';document.getElementById('avfb').style.display='flex';" />
-          <div class="avatar-fallback" id="avfb">VS</div>
-        </div>
         <div>
           <span class="eyebrow">Customer Success · CRM · Retention</span>
           <h1>Vishal Singh</h1>
           <p class="role"><b>Customer Success &amp; Retention Leader</b> — B2B SaaS · and I build AI tools</p>
           <p class="lead">14+ years turning complex B2B products into recurring revenue — owning the full lifecycle of onboarding, activation, retention and reactivation. PMP &amp; CSPO certified. I also design and ship AI tools that make retention teams faster.</p>
           <div class="chips">
-            <span class="chip otw">Open to Director / Head of Customer Success roles</span>
+            <span class="chip otw">Open to Director / Head of Customer Success</span>
             <span class="chip">Hyderabad, India</span>
             <span class="chip">Remote / Hybrid</span>
           </div>
@@ -187,6 +191,11 @@
             <a class="btn btn-ghost" href="Vishal-Singh-Resume.pdf" download>Download résumé ↓</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
           </div>
+        </div>
+        <div class="photo-card">
+          <img class="photo" src="vishal.png" alt="Vishal Singh" onerror="this.style.display='none';document.getElementById('pfb').style.display='flex';" />
+          <div class="photo-fallback" id="pfb">VS</div>
+          <div class="photo-badge"><div class="n">14+ yrs</div><div class="l">CS · CRM · Product</div></div>
         </div>
       </div>
 
@@ -200,13 +209,13 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section" id="about">
+  <section class="section alt" id="about">
     <div class="wrap">
       <div class="shead"><span class="eyebrow">About</span><h2>Post-sale revenue is my craft</h2></div>
       <div class="about-grid">
         <div>
-          <p>I'm a Customer Success, CRM and retention leader based in Hyderabad. Over 14+ years I've moved from mechanical engineering into B2B technical sales, then product and account management, and now customer lifecycle leadership for B2B SaaS.</p>
-          <p>My focus is the engine behind recurring revenue: onboarding, activation, retention and reactivation, churn and LTV, segmentation, and the product delivery that supports it. I run programmes that are measured on outcomes — activation, conversion, ARPU/LTV and churn — not vanity volume.</p>
+          <p>I'm a Customer Success, CRM and retention leader based in Hyderabad. Over 14+ years I've moved from mechanical engineering into B2B technical sales, then product and account management, and now customer-lifecycle leadership for B2B SaaS.</p>
+          <p>My focus is the engine behind recurring revenue: onboarding, activation, retention and reactivation, churn and LTV, segmentation, and the product delivery that supports it. I run programmes measured on outcomes — activation, conversion, ARPU/LTV and churn — not vanity volume.</p>
           <p>Alongside that, I build. I design and ship AI-assisted tools (see PlayerPulse and my studio, Equibyte) that turn scattered customer data into churn-risk, segmentation and next-best-action for CS teams. It keeps me close to the product and to what modern retention actually needs.</p>
           <p>Target: <b>Director / Head of Customer Success</b> at a remote or global B2B SaaS company. I can't relocate from Hyderabad, and I'm open to remote or hybrid with some travel.</p>
         </div>
@@ -261,7 +270,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="section" id="projects">
+  <section class="section alt" id="projects">
     <div class="wrap">
       <div class="shead"><span class="eyebrow">Projects &amp; work</span><h2>Proof, not just claims</h2><p>Self-made case work and tools that show how I think about retention — and how I build.</p></div>
       <div class="grid grid-2">
@@ -310,7 +319,7 @@
   </section>
 
   <!-- CERTS -->
-  <section class="section" id="certs" style="padding-top:0;">
+  <section class="section alt" id="certs">
     <div class="wrap">
       <div class="shead"><span class="eyebrow">Certifications</span><h2>Credentials</h2></div>
       <div class="certs">
@@ -319,21 +328,21 @@
         <div class="cert"><div class="ic">📈</div><h4>Google Project Management</h4><div class="iss">Google · 2024</div></div>
         <div class="cert"><div class="ic">🤖</div><h4>Google AI Essentials</h4><div class="iss">Google · 2024</div></div>
       </div>
-      <p class="muted" style="font-size:14px;margin-top:16px;">Education: Bachelor of Engineering — Visvesvaraya Technological University (VTU), Belgaum, India.</p>
+      <p class="muted" style="font-family:var(--body);font-size:14px;margin-top:18px;">Education: Bachelor of Engineering — Visvesvaraya Technological University (VTU), Belgaum, India.</p>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="wrap">
-      <div class="cta-band">
+      <div class="contact-band">
         <span class="eyebrow">Contact</span>
         <h2>Let's talk customer success</h2>
         <p>Open to Director / Head of Customer Success roles — remote or hybrid, global or India GCC.</p>
         <div class="contact-row">
-          <a class="btn btn-primary" href="mailto:vs111142@gmail.com?subject=Opportunity%20for%20Vishal%20Singh">Email me</a>
-          <a class="btn btn-ghost" href="Vishal-Singh-Resume.pdf" download>Download résumé ↓</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
+          <a class="btn btn-white" href="mailto:vs111142@gmail.com?subject=Opportunity%20for%20Vishal%20Singh">Email me</a>
+          <a class="btn btn-outline" href="Vishal-Singh-Resume.pdf" download>Download résumé ↓</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
         </div>
         <div class="contact-list">
           <a href="mailto:vs111142@gmail.com">vs111142@gmail.com</a>
@@ -345,7 +354,7 @@
   </section>
 
   <footer class="foot">
-    <div class="wrap">© 2026 Vishal Singh · <a href="https://equibytetechnologies.com" target="_blank" rel="noopener">Equibyte Technologies</a> · aboutvishal.equibytetechnologies.com</div>
+    <div class="wrap">© 2026 Vishal Singh · built with <a href="https://equibytetechnologies.com" target="_blank" rel="noopener">Equibyte Technologies</a></div>
   </footer>
 
   <script>
