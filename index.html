@@ -58,6 +58,11 @@
     .hero .role{font-family:var(--body);font-size:clamp(17px,2.3vw,21px);color:var(--ink-2);font-weight:500;margin-bottom:18px;}
     .hero .role b{color:var(--accent);font-weight:600;}
     .hero .lead{font-family:var(--body);color:var(--muted);font-size:17px;max-width:560px;}
+    .hero-points{list-style:none;margin:16px 0 4px;padding:0;max-width:560px;display:grid;gap:10px;}
+    .hero-points li{position:relative;padding-left:28px;font-family:var(--body);color:var(--ink);font-size:15.5px;line-height:1.5;}
+    .hero-points li::before{content:"";position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:6px;background:var(--accent-soft);}
+    .hero-points li::after{content:"✓";position:absolute;left:4px;top:1px;font-size:12px;font-weight:700;color:var(--accent);}
+    .hero-points b{font-weight:600;color:var(--ink);}
     .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 4px;}
     .chip{font-family:var(--body);font-size:13px;font-weight:500;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:#fff;}
     .chip.otw{color:var(--good);border-color:#bfe9d6;background:var(--good-soft);display:inline-flex;align-items:center;gap:7px;}
@@ -189,7 +194,14 @@
           <span class="eyebrow">Senior leader · AI implementation · Product &amp; delivery</span>
           <h1>Vishal Singh</h1>
           <p class="role">I use <b>AI to solve real business problems</b> — and lead the <b>teams and clients</b> who see them through.</p>
-          <p class="lead">A senior professional with 14+ years across B2B SaaS. I design and implement AI where it actually moves the needle — cutting cost, lifting retention and speeding delivery — and I bring the product judgment, client relationships and team leadership to make it land. PMP-certified.</p>
+          <p class="lead">A senior professional with 14+ years across B2B SaaS. What I bring:</p>
+          <ul class="hero-points">
+            <li><b>AI that moves the needle</b> — designed and implemented to cut cost, lift retention and speed delivery.</li>
+            <li><b>Product judgment</b> — knowing what to build, and what to leave out.</li>
+            <li><b>Client relationships</b> — trusted at senior and C-level to grow accounts.</li>
+            <li><b>Team leadership</b> — leading cross-functional teams to make it land.</li>
+            <li><b>PMP-certified delivery</b> — structured, on-time execution across the SDLC.</li>
+          </ul>
           <div class="chips">
             <span class="chip otw">Open to senior leadership roles</span>
             <span class="chip">AI implementation</span>
