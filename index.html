@@ -41,6 +41,14 @@
     .btn-primary:hover{background:#4338ca;}
     .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);}
     .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+    /* icons (SVG, consistent stroke) */
+    .si svg,.ico svg{width:22px;height:22px;}
+    .cert .ic svg{width:28px;height:28px;margin:0 auto;}
+    .si svg,.ico svg,.cert .ic svg{fill:none;stroke:var(--accent);stroke-width:1.85;stroke-linecap:round;stroke-linejoin:round;}
+    .menu-toggle svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;}
+    /* accessibility: keyboard focus + reduced motion */
+    a:focus-visible,.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px;}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important;}.btn:hover,.card:hover,.strength:hover{transform:none;}}
     /* header */
     .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
     .nav{display:flex;align-items:center;gap:26px;height:68px;}
@@ -182,7 +190,7 @@
           <a href="#contact">Contact</a>
         </div>
         <div class="nav-cta"><a class="btn btn-primary" href="Vishal-Singh-Resume.pdf" download>Download résumé</a></div>
-        <button class="menu-toggle" aria-label="Menu">☰</button>
+        <button class="menu-toggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </nav>
     </div>
   </header>
@@ -216,10 +224,10 @@
       </div>
 
       <div class="stats">
-        <div class="stat"><div class="si">🤖</div><div class="big">AI Implementation</div><div class="cap">Build &amp; ship AI that cuts cost and lifts retention</div></div>
-        <div class="stat"><div class="si">👥</div><div class="big">Team &amp; Client Leadership</div><div class="cap">Lead teams and senior / C-level clients through delivery</div></div>
-        <div class="stat"><div class="si">🧩</div><div class="big">Product &amp; Delivery</div><div class="cap">Product judgment with PMP-certified, on-time SDLC execution</div></div>
-        <div class="stat"><div class="si">💬</div><div class="big">Client Engagement &amp; CRM</div><div class="cap">Retention, lifecycle and growth across CRM / MarTech</div></div>
+        <div class="stat"><div class="si"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><div class="big">AI Implementation</div><div class="cap">Build &amp; ship AI that cuts cost and lifts retention</div></div>
+        <div class="stat"><div class="si"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="big">Team &amp; Client Leadership</div><div class="cap">Lead teams and senior / C-level clients through delivery</div></div>
+        <div class="stat"><div class="si"><svg viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div><div class="big">Product &amp; Delivery</div><div class="cap">Product judgment with PMP-certified, on-time SDLC execution</div></div>
+        <div class="stat"><div class="si"><svg viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div><div class="big">Client Engagement &amp; CRM</div><div class="cap">Retention, lifecycle and growth across CRM / MarTech</div></div>
       </div>
     </div>
   </section>
@@ -229,12 +237,12 @@
     <div class="wrap">
       <div class="shead"><span class="eyebrow">Core strengths</span><h2>AI in front — real depth behind it</h2></div>
       <div class="strengths">
-        <div class="strength lead-str"><div class="si">🤖</div><h3>AI Implementation</h3><p>I build and deploy AI tools that solve real operational problems — end to end, not slideware.</p></div>
-        <div class="strength"><div class="si">👥</div><h3>Team &amp; Client Leadership</h3><p>Lead cross-functional teams and own senior client and C-level relationships through delivery.</p></div>
-        <div class="strength"><div class="si">💬</div><h3>Client Engagement</h3><p>Retention, lifecycle and growth programmes that keep customers — and revenue.</p></div>
-        <div class="strength"><div class="si">🔗</div><h3>CRM Knowledge</h3><p>Hands-on across CRM/MarTech — Smartico, Optimove, Solitics, HubSpot, Salesforce and more.</p></div>
-        <div class="strength"><div class="si">🧩</div><h3>Product Knowledge</h3><p>Roadmaps, PRDs and integrations — from idea to shipped product.</p></div>
-        <div class="strength"><div class="si">📋</div><h3>SDLC &amp; PMP</h3><p>Structured, on-time delivery — Agile/Scrum, full SDLC, PMP-certified.</p></div>
+        <div class="strength lead-str"><div class="si"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>AI Implementation</h3><p>I build and deploy AI tools that solve real operational problems — end to end, not slideware.</p></div>
+        <div class="strength"><div class="si"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Team &amp; Client Leadership</h3><p>Lead cross-functional teams and own senior client and C-level relationships through delivery.</p></div>
+        <div class="strength"><div class="si"><svg viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div><h3>Client Engagement</h3><p>Retention, lifecycle and growth programmes that keep customers — and revenue.</p></div>
+        <div class="strength"><div class="si"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div><h3>CRM Knowledge</h3><p>Hands-on across CRM/MarTech — Smartico, Optimove, Solitics, HubSpot, Salesforce and more.</p></div>
+        <div class="strength"><div class="si"><svg viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div><h3>Product Knowledge</h3><p>Roadmaps, PRDs and integrations — from idea to shipped product.</p></div>
+        <div class="strength"><div class="si"><svg viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></div><h3>SDLC &amp; PMP</h3><p>Structured, on-time delivery — Agile/Scrum, full SDLC, PMP-certified.</p></div>
       </div>
     </div>
   </section>
@@ -306,28 +314,28 @@
       <div class="shead"><span class="eyebrow">Projects &amp; work</span><h2>Proof, not just claims</h2><p>Self-made case work and AI tools that show how I think about problems — and how I build.</p></div>
       <div class="grid grid-2">
         <div class="card">
-          <div class="ico">📘</div>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></div>
           <h3>CRM &amp; Retention Strategy — Skill Demo</h3>
           <p>A self-made blueprint: competitor analysis, a KPI framework, engagement rules, and a full CRM roadmap. Shows how I turn a market into a retention plan.</p>
           <a class="link" href="https://drive.google.com/file/d/13zfPyHUJSr8HqskVq6yuSm7xa_m9ThRD/view" target="_blank" rel="noopener">View the case study →</a>
         </div>
         <div class="card">
           <span class="tag live">Live demo</span>
-          <div class="ico">📡</div>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
           <h3>PlayerPulse — AI retention tool</h3>
           <p>An AI-assisted retention and engagement tool I designed and built end-to-end. A browser extension captures customer activity and transaction history; an AI analyst layer turns it into churn-risk, segmentation and next-best-action on a prioritised CS action desk.</p>
           <a class="link" href="https://demo-playerpulse.equibytetechnologies.com" target="_blank" rel="noopener">Open the live demo →</a>
         </div>
         <div class="card">
           <span class="tag live">Live</span>
-          <div class="ico">🧩</div>
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div>
           <h3>Equibyte Technologies — AI product studio</h3>
           <p>My studio, where I build AI tools for customer engagement, retention and internal ops — plus early products (Signal, Flow, Lens). It keeps my hands on modern retention tooling.</p>
           <a class="link" href="https://equibytetechnologies.com" target="_blank" rel="noopener">Visit Equibyte →</a>
         </div>
         <div class="card">
           <span class="tag build">Building</span>
-          <div class="ico">🍽️</div>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h1a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
           <h3>Cloud-kitchen ordering app</h3>
           <p>An ordering and engagement app for cloud kitchens in my residential community in Hyderabad — a real-world build to sharpen product, retention and delivery under live constraints. More tools to follow.</p>
           <span class="link">In development →</span>
@@ -354,7 +362,7 @@
     <div class="wrap">
       <div class="shead"><span class="eyebrow">Certifications</span><h2>Credentials</h2></div>
       <div class="certs" style="grid-template-columns:minmax(0,320px);justify-content:center;">
-        <div class="cert"><div class="ic">📜</div><h4>PMP</h4><div class="iss">Project Management Professional — PMI, 2022</div><a class="verify" href="https://www.credly.com/badges/8cdd105b-1ec0-4712-b92c-73b74aab655d/public_url" target="_blank" rel="noopener">Verify credential →</a></div>
+        <div class="cert"><div class="ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></div><h4>PMP</h4><div class="iss">Project Management Professional — PMI, 2022</div><a class="verify" href="https://www.credly.com/badges/8cdd105b-1ec0-4712-b92c-73b74aab655d/public_url" target="_blank" rel="noopener">Verify credential →</a></div>
       </div>
       <p class="muted" style="font-family:var(--body);font-size:14px;margin-top:18px;text-align:center;">Additional training: Google Project Management &amp; Google AI Essentials. &nbsp;·&nbsp; Education: B.E., Visvesvaraya Technological University (VTU).</p>
     </div>
