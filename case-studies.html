@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case studies | Vishal Singh, iGaming CRM</title>
+  <meta name="description" content="Five iGaming CRM case studies: cashback ladder test, reward cost control, VIP guardrails, bonus abuse and platform fixes." />
+  <link rel="canonical" href="https://aboutvishal.equibytetechnologies.com/case-studies.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Vishal Singh | iGaming CRM, Retention &amp; Player Engagement" />
+  <meta property="og:description" content="Not just a CV. Interactive case studies, a live cashback cost calculator and the retention tool I built." />
+  <meta property="og:url" content="https://aboutvishal.equibytetechnologies.com/" />
+  <meta property="og:image" content="https://aboutvishal.equibytetechnologies.com/logo-mark-blue.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="logo-mark-blue.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="dot">VS</span>Vishal Singh</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="how-i-work.html">How I work</a>
+      <a href="case-studies.html" class="active" aria-current="page">Case studies</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="playerpulse.html">PlayerPulse</a>
+      <a href="experience.html">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="section page-top" id="cases">
+  <div class="wrap">
+    <a class="crumb" href="index.html">← Home</a>
+    <div class="shead">
+      <span class="eyebrow">Case studies</span>
+      <h1 style="font-size:clamp(30px,4.4vw,44px);margin-bottom:12px">Real problems, what I did, and what happened</h1>
+      <p>Five stories from live operations. Each one follows the same flow: the situation, my actions, and the result.</p>
+    </div>
+    <div class="cases">
+      <div class="case-tabs" role="tablist" aria-label="Case studies">
+        <button class="case-tab" role="tab" aria-selected="true" data-case="c1"><span class="ct">Cashback ladder A/B test</span><span class="cm">5-day ladder vs holdout group</span></button>
+        <button class="case-tab" role="tab" aria-selected="false" data-case="c2"><span class="ct">Reward cost control</span><span class="cm">~20% of GGR, multi-brand</span></button>
+        <button class="case-tab" role="tab" aria-selected="false" data-case="c3"><span class="ct">VIP manual award gap</span><span class="cm">From a loss to a lasting guardrail</span></button>
+        <button class="case-tab" role="tab" aria-selected="false" data-case="c4"><span class="ct">Bonus abuse patterns</span><span class="cm">3 patterns, 3 rule changes</span></button>
+        <button class="case-tab" role="tab" aria-selected="false" data-case="c5"><span class="ct">Platform fixes &amp; migration</span><span class="cm">SoftSwiss rules, Optimove → Fast Track</span></button>
+      </div>
+
+      <div>
+        <!-- C1 -->
+        <article class="case on" id="c1" role="tabpanel">
+          <h3>Cashback ladder: proving the lift before rollout</h3>
+          <p class="sub">New high-value players · 2-week test + 2-week follow-up · random split with balanced value tiers</p>
+          <div class="flow">
+            <div class="flow-step"><div class="lab">Situation</div><p>New high-value players usually moved straight to VIP and weekly cashback. I wanted a stronger habit-building offer, but only if it truly added value.</p></div>
+            <div class="flow-step"><div class="lab">What I did</div><p>Built a 5-day ladder where each day paid more cashback with lower wagering. Group A got the ladder, Group B the standard weekly cashback, and 10% were held out with no offer.</p></div>
+            <div class="flow-step result"><div class="lab">Result</div><p>The ladder delivered <b>47% more NGR per player</b> than the holdout and <b>20% more</b> than standard cashback. I fixed the biggest drop-off (Day 2 to Day 3) before rollout.</p></div>
+          </div>
+          <details class="more"><summary>Show the numbers and charts</summary><div class="in">
+          <div class="viz-grid">
+            <div class="viz-box">
+              <div class="viz-title">NGR per player (holdout = 100)</div>
+              <div class="hbar"><span>Holdout (10%)</span><div class="track"><div class="fill" data-w="68"></div></div><span class="v">100</span></div>
+              <div class="hbar"><span>Weekly cashback</span><div class="track"><div class="fill b" data-w="83"></div></div><span class="v">123</span></div>
+              <div class="hbar"><span>Cashback ladder</span><div class="track"><div class="fill a" data-w="100"></div></div><span class="v">147</span></div>
+              <p class="viz-note">Indexed to the holdout. The ladder was 47% above holdout and 20% above weekly cashback.</p>
+            </div>
+            <div class="viz-box">
+              <div class="viz-title">How the ladder works</div>
+              <div class="ladder" aria-label="Cashback rises and wagering falls each day">
+                <div class="rung"><div class="bar" style="height:28%"></div><div class="cap">Day 1</div></div>
+                <div class="rung"><div class="bar" style="height:44%"></div><div class="cap">Day 2</div></div>
+                <div class="rung drop"><div class="bar" style="height:60%"></div><div class="cap">Day 3<br>fixed</div></div>
+                <div class="rung"><div class="bar" style="height:78%"></div><div class="cap">Day 4</div></div>
+                <div class="rung"><div class="bar" style="height:96%"></div><div class="cap">Day 5</div></div>
+              </div>
+              <div class="legend-row"><span><i style="background:var(--accent)"></i>Cashback % rises, wagering falls</span><span><i style="background:transparent;outline:2px dashed var(--warn)"></i>Biggest drop-off, re-tuned</span></div>
+            </div>
+          </div>
+          <div class="viz-box" style="margin-top:18px">
+            <div class="viz-title">Final rollout: the ladder is a booster, not a habit</div>
+            <div class="month">
+              <div class="wk">Week 1<small>Weekly cashback</small></div>
+              <div class="wk">Week 2<small>Weekly cashback</small></div>
+              <div class="wk">Week 3<small>Weekly cashback</small></div>
+              <div class="wk lad">Week 4<small>Cashback ladder</small></div>
+            </div>
+            <p class="viz-note">Running the ladder every week would push bonus cost too high and train players to expect it. One ladder week a month kept the impact and controlled the cost.</p>
+          </div>
+                  </div></details>
+        </article>
+
+        <!-- C2 -->
+        <article class="case" id="c2" role="tabpanel">
+          <h3>Reward cost: keeping bonuses profitable across brands</h3>
+          <p class="sub">Multi-brand operator · DACH, wider Europe, AU and NZ · ~100K players on the example brand</p>
+          <div class="flow">
+            <div class="flow-step"><div class="lab">Situation</div><p>Each brand had a different stage and acquisition push, so one fixed bonus budget didn't fit. Targets were set monthly per brand, between 10% and 25% of GGR.</p></div>
+            <div class="flow-step"><div class="lab">What I did</div><p>Reviewed cost against budget every week and pulled three levers: wagering, offer value and target segment. In festive peaks, I checked each promo's first day the next morning.</p></div>
+            <div class="flow-step result"><div class="lab">Result</div><p>On the example brand, reward cost held at <b>~20% of a ~€4M monthly GGR</b>, with every bonus type tracked separately.</p></div>
+          </div>
+          <details class="more"><summary>Show the numbers and charts</summary><div class="in">
+          <div class="viz-grid">
+            <div class="viz-box">
+              <div class="viz-title">Where the example brand sat in the target range</div>
+              <div class="gauge">
+                <div class="scale"><div class="band" style="left:25%;width:37.5%"></div><div class="pin" style="left:50%"></div></div>
+                <div class="ticks"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span></div>
+              </div>
+              <p class="viz-note">Box = group range (10 to 25% of GGR). Line = example brand at ~20%.</p>
+              <div class="viz-title" style="margin-top:18px">Monthly reward cost by bonus type</div>
+              <div class="split">
+                <div style="width:20%;background:#4f46e5">20%</div>
+                <div style="width:35%;background:#0ea5e9">35%</div>
+                <div style="width:15%;background:#14b8a6">15%</div>
+                <div style="width:30%;background:#94a3b8">30%</div>
+              </div>
+              <div class="split-legend">
+                <span><i style="background:#4f46e5"></i>VIP cashback</span>
+                <span><i style="background:#0ea5e9"></i>Deposit bonuses (incl. welcome)</span>
+                <span><i style="background:#14b8a6"></i>Free spins</span>
+                <span><i style="background:#94a3b8"></i>Leaderboards, milestones, loyalty</span>
+              </div>
+            </div>
+            <div class="viz-box">
+              <div class="viz-title">The levers I pull when cost runs ahead</div>
+              <div class="levers">
+                <div class="lever"><span class="ic">1</span><div><b>Wagering.</b> A higher wagering requirement raises clawback, so the net cost per bonus drops.</div></div>
+                <div class="lever"><span class="ic">2</span><div><b>Offer value.</b> Lower the %, the cap or the number of free spins on the offers that convert weakly.</div></div>
+                <div class="lever"><span class="ic">3</span><div><b>Target segment.</b> Tighten who gets the offer, so budget goes to players with real value, not bonus hunters.</div></div>
+                <div class="lever"><span class="ic">4</span><div><b>Timing.</b> Weekly reviews as standard, next-morning checks on day-one results during festive peaks.</div></div>
+              </div>
+            </div>
+          </div>
+                  </div></details>
+        </article>
+
+        <!-- C3 -->
+        <article class="case" id="c3" role="tabpanel">
+          <h3>VIP manual award: closing a control gap</h3>
+          <p class="sub">High-value reactivation campaign · VIP team · out-of-policy payout</p>
+          <div class="flow">
+            <div class="flow-step"><div class="lab">Situation</div><p>A lapsed VIP reactivated through our campaign, then asked his VIP manager for the weekly VIP cashback. The system blocked it, but the manager awarded it manually with very low wagering. He won and cashed out, so player NGR went negative.</p></div>
+            <div class="flow-step"><div class="lab">What I did</div><p>Caught it in the campaign review and traced the root cause: manual awards could bypass system rules. I set up eligibility segments for the VIP team, so manual awards could only go to eligible players.</p></div>
+            <div class="flow-step result"><div class="lab">Result</div><p>The same mistake <b>can no longer happen</b>. One costly exception turned into a permanent guardrail, without slowing the VIP team down.</p></div>
+          </div>
+          <details class="more"><summary>Show the detail</summary><div class="in">
+          <div class="viz-box">
+            <div class="viz-title">Before and after</div>
+            <div class="chain" style="margin-bottom:12px">
+              <span class="node-pill">VIP reactivates</span><span class="arrow">→</span>
+              <span class="node-pill">Asks for cashback</span><span class="arrow">→</span>
+              <span class="node-pill bad">Manual award bypasses rules</span><span class="arrow">→</span>
+              <span class="node-pill bad">Negative NGR</span>
+            </div>
+            <div class="chain">
+              <span class="node-pill">VIP reactivates</span><span class="arrow">→</span>
+              <span class="node-pill">Asks for cashback</span><span class="arrow">→</span>
+              <span class="node-pill good">Eligibility segment checks</span><span class="arrow">→</span>
+              <span class="node-pill good">Only eligible players get awards</span>
+            </div>
+          </div>
+                  </div></details>
+        </article>
+
+        <!-- C4 -->
+        <article class="case" id="c4" role="tabpanel">
+          <h3>Bonus abuse: three patterns and the rules that stopped them</h3>
+          <p class="sub">Casino and sportsbook brands · acquisition, early life and ongoing promos</p>
+          <div class="flow">
+            <div class="flow-step"><div class="lab">Situation</div><p>Generous offers attract players who play the bonus, not the games. Left alone, they drain the budget meant for real players.</p></div>
+            <div class="flow-step"><div class="lab">What I did</div><p>Defined a clear signal for each pattern, then changed the rules: new segments, account linking rules and wagering limits.</p></div>
+            <div class="flow-step result"><div class="lab">Result</div><p>Abusers were either <b>blocked or moved into lower-value offers</b>, protecting the budget for genuine players.</p></div>
+          </div>
+          <details class="more"><summary>Show the detail</summary><div class="in">
+          <div class="abuse">
+            <div class="abuse-card"><h4>Bonus hunters</h4>
+              <div class="row"><b>Signal</b>Deposit only when a campaign lands, and bonuses worth 60%+ of their total deposits.</div>
+              <div class="row fix"><b>Rule change</b>Their own segment with lower-value, higher-wagering offers. Real-money-linked bonuses blocked quick cashouts.</div></div>
+            <div class="abuse-card"><h4>Duplicate accounts</h4>
+              <div class="row"><b>Signal</b>More than 3 accounts linked to the same device or IP, mostly around welcome and early-life bonuses.</div>
+              <div class="row fix"><b>Rule change</b>Early-life bonus journey blocked for linked accounts.</div></div>
+            <div class="abuse-card"><h4>Fast wagering</h4>
+              <div class="row"><b>Signal</b>Very high bets on live casino and roulette to clear wagering quickly.</div>
+              <div class="row fix"><b>Rule change</b>Max bet during wagering capped at €5.</div></div>
+          </div>
+                  </div></details>
+        </article>
+
+        <!-- C5 -->
+        <article class="case" id="c5" role="tabpanel">
+          <h3>Platform fixes: from manual workarounds to built-in rules</h3>
+          <p class="sub">Working with Product, Risk and platform vendors</p>
+          <div class="flow">
+            <div class="flow-step"><div class="lab">Situation</div><p>Some bonus limits were set by hand for every bonus, and loopholes kept appearing. Manual work meant slow setups and human errors.</p></div>
+            <div class="flow-step"><div class="lab">What I did</div><p>Fed each loophole back to Product and the platform team, and pushed for permanent fixes instead of workarounds. I also defined the data set for our CRM migration.</p></div>
+            <div class="flow-step result"><div class="lab">Result</div><p>Faster setups, <b>fewer manual errors</b>, and new rules that protect every future campaign by default.</p></div>
+          </div>
+          <details class="more"><summary>Show the detail</summary><div class="in">
+          <div class="abuse">
+            <div class="abuse-card"><h4>Max cashout as a rule</h4>
+              <div class="row">At our request, SoftSwiss built max cashout as an automatic multiplier rule instead of a manual entry per bonus.</div></div>
+            <div class="abuse-card"><h4>No-deposit bonus limit</h4>
+              <div class="row">A blanket rule: no player can receive more than 5 no-deposit bonuses within 10 minutes.</div></div>
+            <div class="abuse-card"><h4>Optimove → Fast Track</h4>
+              <div class="row">I defined the player fields, segments and campaign history to carry over, and worked with a data colleague to pull and move it.</div></div>
+          </div>
+                  </div></details>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let's talk retention</h2>
+    <p>Open to Senior CRM Manager, CRM Lead and CRM Product Owner roles in iGaming, remote. Happy to walk through any case study on a call.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:vs111142@gmail.com?subject=CRM%20role%20for%20Vishal%20Singh">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
+      <a class="btn btn-ghost" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Download résumé ↓</a>
+    </div>
+    <div class="meta"><a href="mailto:vs111142@gmail.com">vs111142@gmail.com</a> · <a href="tel:+919160018313">+91 9160 018 313</a> · Hyderabad, India · Remote</div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Vishal Singh · iGaming CRM, Retention &amp; Player Engagement</footer>
+<script src="site.js"></script>
+</body>
+</html>

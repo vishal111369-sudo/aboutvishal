@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cashback cost calculator | Vishal Singh</title>
+  <meta name="description" content="Forecast the true cost of a cashback offer using theo, house edge and wagering requirements." />
+  <link rel="canonical" href="https://aboutvishal.equibytetechnologies.com/calculator.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Vishal Singh | iGaming CRM, Retention &amp; Player Engagement" />
+  <meta property="og:description" content="Not just a CV. Interactive case studies, a live cashback cost calculator and the retention tool I built." />
+  <meta property="og:url" content="https://aboutvishal.equibytetechnologies.com/" />
+  <meta property="og:image" content="https://aboutvishal.equibytetechnologies.com/logo-mark-blue.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="logo-mark-blue.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="dot">VS</span>Vishal Singh</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="how-i-work.html">How I work</a>
+      <a href="case-studies.html">Case studies</a>
+      <a href="calculator.html" class="active" aria-current="page">Calculator</a>
+      <a href="playerpulse.html">PlayerPulse</a>
+      <a href="experience.html">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="section page-top alt" id="calculator">
+  <div class="wrap">
+    <a class="crumb" href="index.html">← Home</a>
+    <div class="shead">
+      <span class="eyebrow">Interactive tool</span>
+      <h1 style="font-size:clamp(30px,4.4vw,44px);margin-bottom:12px">Cashback cost calculator</h1>
+      <p>This is how I forecast the real cost of a cashback offer before it goes live. Move the sliders and watch theo, clawback and net cost update.</p>
+    </div>
+    <div class="calc-steps">
+      <div class="cstep"><b>Segment</b>Match players to the bonus budget</div>
+      <div class="cstep"><b>Size</b>Expect 2 to 3% conversion</div>
+      <div class="cstep"><b>Theo</b>Wager × house edge = expected loss</div>
+      <div class="cstep"><b>Cashback</b>Theo × cashback %</div>
+      <div class="cstep"><b>Clawback</b>Cashback × wagering × house edge</div>
+      <div class="cstep"><b>Check</b>Fit the budget, set the trigger from A/B</div>
+    </div>
+    <div class="calc">
+      <div class="inputs" id="calcInputs">
+        <div class="field"><div class="top"><label for="i_players">Players targeted</label><span class="val" id="o_players"></span></div><input type="range" id="i_players" min="2000" max="100000" step="1000" value="20000"></div>
+        <div class="field"><div class="top"><label for="i_conv">Conversion rate</label><span class="val" id="o_conv"></span></div><input type="range" id="i_conv" min="0.5" max="10" step="0.5" value="2.5"><div class="help">Shifts with copy, season, region and the offer itself.</div></div>
+        <div class="field"><div class="top"><label for="i_wager">Avg wager per player (week)</label><span class="val" id="o_wager"></span></div><input type="range" id="i_wager" min="200" max="10000" step="100" value="2000"></div>
+        <div class="field"><div class="top"><label for="i_rtp">Slot RTP</label><span class="val" id="o_rtp"></span></div><input type="range" id="i_rtp" min="94" max="98" step="0.5" value="96"><div class="help">House edge = 100% minus RTP. I keep one average across slots to stay simple for content and CS teams.</div></div>
+        <div class="field"><div class="top"><label for="i_cb">Cashback %</label><span class="val" id="o_cb"></span></div><input type="range" id="i_cb" min="5" max="30" step="1" value="10"></div>
+        <div class="field"><div class="top"><label for="i_wr">Wagering requirement</label><span class="val" id="o_wr"></span></div><input type="range" id="i_wr" min="0" max="20" step="1" value="3"></div>
+        <div class="field"><div class="top"><label for="i_budget">Campaign budget</label><span class="val" id="o_budget"></span></div><input type="range" id="i_budget" min="1000" max="50000" step="500" value="5000"></div>
+      </div>
+      <div class="outputs" aria-live="polite">
+        <div class="out-grid">
+          <div class="out"><div class="l">Players who convert</div><div class="v" id="r_conv"></div></div>
+          <div class="out"><div class="l">Theo per player</div><div class="v" id="r_theo"></div></div>
+          <div class="out"><div class="l">Cashback per player</div><div class="v" id="r_cb"></div></div>
+          <div class="out"><div class="l">Clawback per player</div><div class="v" id="r_claw"></div></div>
+          <div class="out hl"><div class="l">Net cost per player</div><div class="v" id="r_net"></div></div>
+          <div class="out hl"><div class="l">Total net cost</div><div class="v" id="r_total"></div></div>
+        </div>
+        <div class="budget"><div class="bt"><span>Budget used</span><span id="r_pct"></span></div><div class="track"><div class="fill" id="r_bar"></div></div></div>
+        <div class="verdict" id="r_verdict"></div>
+        <div class="math" id="r_math"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let's talk retention</h2>
+    <p>Open to Senior CRM Manager, CRM Lead and CRM Product Owner roles in iGaming, remote. Happy to walk through any case study on a call.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:vs111142@gmail.com?subject=CRM%20role%20for%20Vishal%20Singh">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
+      <a class="btn btn-ghost" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Download résumé ↓</a>
+    </div>
+    <div class="meta"><a href="mailto:vs111142@gmail.com">vs111142@gmail.com</a> · <a href="tel:+919160018313">+91 9160 018 313</a> · Hyderabad, India · Remote</div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Vishal Singh · iGaming CRM, Retention &amp; Player Engagement</footer>
+<script src="site.js"></script>
+</body>
+</html>

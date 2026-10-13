@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayerPulse | Vishal Singh</title>
+  <meta name="description" content="PlayerPulse: a retention tool that turns player activity into a readable story and next best actions." />
+  <link rel="canonical" href="https://aboutvishal.equibytetechnologies.com/playerpulse.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Vishal Singh | iGaming CRM, Retention &amp; Player Engagement" />
+  <meta property="og:description" content="Not just a CV. Interactive case studies, a live cashback cost calculator and the retention tool I built." />
+  <meta property="og:url" content="https://aboutvishal.equibytetechnologies.com/" />
+  <meta property="og:image" content="https://aboutvishal.equibytetechnologies.com/logo-mark-blue.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="logo-mark-blue.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="dot">VS</span>Vishal Singh</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="how-i-work.html">How I work</a>
+      <a href="case-studies.html">Case studies</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="playerpulse.html" class="active" aria-current="page">PlayerPulse</a>
+      <a href="experience.html">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="section page-top" id="playerpulse">
+  <div class="wrap">
+    <a class="crumb" href="index.html">← Home</a>
+    <div class="shead">
+      <span class="eyebrow">Built by me</span>
+      <h1 style="font-size:clamp(30px,4.4vw,44px);margin-bottom:12px">PlayerPulse: a player's story before the call</h1>
+      <p>CRM tools show dashboards. VIP and account managers need to know, in 30 seconds, what a player has been doing and what to do next. I designed and built PlayerPulse end to end to close that gap.</p>
+    </div>
+    <div class="pp">
+      <div>
+        <div class="pp-steps" role="tablist" aria-label="PlayerPulse steps">
+          <button class="pp-step" role="tab" aria-selected="true" data-s="s1"><span class="n">STEP 1</span><span class="t">Capture</span><span class="d">A browser extension reads player activity and transactions from the back office.</span></button>
+          <button class="pp-step" role="tab" aria-selected="false" data-s="s2"><span class="n">STEP 2</span><span class="t">Analyse</span><span class="d">Churn risk, segment and value signals, scored automatically.</span></button>
+          <button class="pp-step" role="tab" aria-selected="false" data-s="s3"><span class="n">STEP 3</span><span class="t">Act</span><span class="d">A plain-English player story with the next best actions, ranked.</span></button>
+        </div>
+        <div class="pp-gap">Built with a Chrome extension, Supabase, Google Gemini and Vercel. <a href="https://demo-playerpulse.equibytetechnologies.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">Open the live demo →</a></div>
+      </div>
+      <div class="screen">
+        <div class="screen-bar"><i></i><i></i><i></i><span id="scrLabel">PlayerPulse · Capture</span></div>
+        <div class="scr on" id="s1">
+          <div class="pane"><h5>Session timeline · sample player</h5>
+            <div class="evt"><span class="tm">Mon 21:04</span><span>Deposit · crypto</span><span class="amt dep">+€150</span></div>
+            <div class="evt"><span class="tm">Mon 21:40</span><span>Slots · 312 spins, avg bet €0.80</span><span class="amt">€250 wagered</span></div>
+            <div class="evt"><span class="tm">Wed 22:15</span><span>Deposit · crypto</span><span class="amt dep">+€100</span></div>
+            <div class="evt"><span class="tm">Wed 23:02</span><span>Live roulette · 14 rounds</span><span class="amt">€140 wagered</span></div>
+            <div class="evt"><span class="tm">Thu 09:30</span><span>Withdrawal request</span><span class="amt wd">−€220</span></div>
+            <div class="evt"><span class="tm">Fri to Sun</span><span>No logins</span><span class="amt">·</span></div>
+          </div>
+          <div class="pane"><h5>Captured automatically</h5><div class="tagz"><span>Deposits</span><span>Withdrawals</span><span>Game rounds</span><span>Bonuses</span><span>Login gaps</span></div></div>
+        </div>
+        <div class="scr" id="s2">
+          <div class="pane"><h5>Churn risk</h5>
+            <div class="risk"><div class="risk-dial"><span>72</span></div><div>High risk. Withdrawal after a win, followed by 3 silent days. Deposit frequency down from 3 to 2 per week.<div class="tagz"><span>Mid-value</span><span>Slots-first</span><span>Crypto</span><span>Evening player</span></div></div></div>
+          </div>
+          <div class="pane"><h5>Signals scored</h5>
+            <div class="evt"><span class="tm">Recency</span><span>Last login 3 days ago (usual gap 1 day)</span><span class="amt wd">▲ risk</span></div>
+            <div class="evt"><span class="tm">Cashflow</span><span>Withdrew 88% of last deposit</span><span class="amt wd">▲ risk</span></div>
+            <div class="evt"><span class="tm">Bonus</span><span>No bonus claimed in 14 days</span><span class="amt dep">clean</span></div>
+          </div>
+        </div>
+        <div class="scr" id="s3">
+          <div class="pane"><h5>Player story</h5><p class="story">A steady evening slots player who deposits by crypto two to three times a week. After a winning roulette session on Wednesday, they withdrew most of it and have not logged in since. They are not a bonus hunter. This looks like a "cash out and drift" pattern, and early contact usually works.</p></div>
+          <div class="pane"><h5>Next best actions</h5>
+            <div class="nba"><span class="p">1</span><div>Personal check-in from the account manager within 24 hours, no offer attached.</div></div>
+            <div class="nba"><span class="p p2">2</span><div>If no return in 48 hours: free spins on their top slot, low wagering, capped max win.</div></div>
+            <div class="nba"><span class="p p2">3</span><div>Add to the weekend reactivation segment and track the return rate.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let's talk retention</h2>
+    <p>Open to Senior CRM Manager, CRM Lead and CRM Product Owner roles in iGaming, remote. Happy to walk through any case study on a call.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:vs111142@gmail.com?subject=CRM%20role%20for%20Vishal%20Singh">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ig-vishal-singh/" target="_blank" rel="noopener">LinkedIn →</a>
+      <a class="btn btn-ghost" href="Vishal-Singh-Resume.pdf" target="_blank" rel="noopener">Download résumé ↓</a>
+    </div>
+    <div class="meta"><a href="mailto:vs111142@gmail.com">vs111142@gmail.com</a> · <a href="tel:+919160018313">+91 9160 018 313</a> · Hyderabad, India · Remote</div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Vishal Singh · iGaming CRM, Retention &amp; Player Engagement</footer>
+<script src="site.js"></script>
+</body>
+</html>
