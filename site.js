@@ -84,11 +84,11 @@
     $('r_pct').textContent=Math.round(pct)+'%';var bar=$('r_bar');bar.style.width=Math.min(pct,100)+'%';
     bar.style.background=pct>100?'#fb7185':pct>85?'#fbbf24':'#5eead4';
     var v=$('r_verdict');
-    if(pct>100){v.innerHTML='Over budget by '+eur(tot-B)+'. I would raise wagering, lower the cashback % or tighten the segment before launch.';}
+    if(pct>100){v.innerHTML='Over budget by '+eur(tot-B)+'. I would raise wagering, lower the bonus % or tighten the segment before launch.';}
     else if(pct>85){v.innerHTML='Close to the limit. It works, but there is little room if conversion beats the forecast.';}
     else{v.innerHTML='Inside budget with '+eur(B-tot)+' to spare. Room to test a richer variant against a holdout.';}
     $('r_math').innerHTML='<b>Theo</b> = '+eur(W)+' wagered × '+(he*100).toFixed(1)+'% edge = '+eur(theo,2)+
-      '<br><b>Cashback</b> = '+eur(theo,2)+' × '+CB+'% = '+eur(cb,2)+
+      '<br><b>Bonus</b> = '+eur(theo,2)+' × '+CB+'% = '+eur(cb,2)+
       '<br><b>Clawback</b> = '+eur(cb,2)+' × '+WR+'× wagering × '+(he*100).toFixed(1)+'% = '+eur(claw,2)+
       '<br><b>Net cost</b> = '+eur(net,2)+' per player × '+n.toLocaleString('en-GB')+' players = '+eur(tot)+
       '<br><b>Cost as % of theo</b> = '+(theo?Math.round(net/theo*100):0)+'%, a proxy for reward cost as % of GGR';

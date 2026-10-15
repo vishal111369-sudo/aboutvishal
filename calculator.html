@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cashback cost calculator | Vishal Singh</title>
-  <meta name="description" content="Forecast the true cost of a cashback offer using theo, house edge and wagering requirements." />
+  <title>Bonus cost calculator | Vishal Singh</title>
+  <meta name="description" content="Forecast the true cost of a bonus offer using theo, house edge and wagering requirements." />
   <link rel="canonical" href="https://aboutvishal.equibytetechnologies.com/calculator.html" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Vishal Singh | iGaming CRM, Retention &amp; Player Engagement" />
-  <meta property="og:description" content="Not just a CV. Interactive case studies, a live cashback cost calculator and the retention tool I built." />
+  <meta property="og:description" content="Not just a CV. Interactive case studies, a live bonus cost calculator and the retention tool I built." />
   <meta property="og:url" content="https://aboutvishal.equibytetechnologies.com/" />
   <meta property="og:image" content="https://aboutvishal.equibytetechnologies.com/logo-mark-blue.png" />
   <meta name="twitter:card" content="summary" />
@@ -44,24 +44,24 @@
     <a class="crumb" href="index.html">← Home</a>
     <div class="shead">
       <span class="eyebrow">Interactive tool</span>
-      <h1 style="font-size:clamp(30px,4.4vw,44px);margin-bottom:12px">Cashback cost calculator</h1>
-      <p>This is how I forecast the real cost of a cashback offer before it goes live. Move the sliders and watch theo, clawback and net cost update.</p>
+      <h1 style="font-size:clamp(30px,4.4vw,44px);margin-bottom:12px">Bonus cost calculator</h1>
+      <p>This is how I forecast the real cost of a bonus offer before it goes live. Move the sliders and watch theo, clawback and net cost update.</p>
     </div>
     <div class="calc-steps">
       <div class="cstep"><b>Segment</b>Match players to the bonus budget</div>
-      <div class="cstep"><b>Size</b>Expect 2 to 3% conversion</div>
+      <div class="cstep"><b>Size</b>Conversion can vary, up to 8%</div>
       <div class="cstep"><b>Theo</b>Wager × house edge = expected loss</div>
-      <div class="cstep"><b>Cashback</b>Theo × cashback %</div>
-      <div class="cstep"><b>Clawback</b>Cashback × wagering × house edge</div>
+      <div class="cstep"><b>Bonus</b>Theo × bonus %</div>
+      <div class="cstep"><b>Clawback</b>Bonus × wagering × house edge</div>
       <div class="cstep"><b>Check</b>Fit the budget, set the trigger from A/B</div>
     </div>
     <div class="calc">
       <div class="inputs" id="calcInputs">
         <div class="field"><div class="top"><label for="i_players">Players targeted</label><span class="val" id="o_players"></span></div><input type="range" id="i_players" min="2000" max="100000" step="1000" value="20000"></div>
-        <div class="field"><div class="top"><label for="i_conv">Conversion rate</label><span class="val" id="o_conv"></span></div><input type="range" id="i_conv" min="0.5" max="10" step="0.5" value="2.5"><div class="help">Shifts with copy, season, region and the offer itself.</div></div>
+        <div class="field"><div class="top"><label for="i_conv">Conversion rate</label><span class="val" id="o_conv"></span></div><input type="range" id="i_conv" min="0.5" max="8" step="0.5" value="2.5"><div class="help">Shifts with copy, season, region and the offer itself. Can vary, up to 8%.</div></div>
         <div class="field"><div class="top"><label for="i_wager">Avg wager per player (week)</label><span class="val" id="o_wager"></span></div><input type="range" id="i_wager" min="200" max="10000" step="100" value="2000"></div>
         <div class="field"><div class="top"><label for="i_rtp">Slot RTP</label><span class="val" id="o_rtp"></span></div><input type="range" id="i_rtp" min="94" max="98" step="0.5" value="96"><div class="help">House edge = 100% minus RTP. I keep one average across slots to stay simple for content and CS teams.</div></div>
-        <div class="field"><div class="top"><label for="i_cb">Cashback %</label><span class="val" id="o_cb"></span></div><input type="range" id="i_cb" min="5" max="30" step="1" value="10"></div>
+        <div class="field"><div class="top"><label for="i_cb">Bonus %</label><span class="val" id="o_cb"></span></div><input type="range" id="i_cb" min="5" max="30" step="1" value="10"></div>
         <div class="field"><div class="top"><label for="i_wr">Wagering requirement</label><span class="val" id="o_wr"></span></div><input type="range" id="i_wr" min="0" max="20" step="1" value="3"></div>
         <div class="field"><div class="top"><label for="i_budget">Campaign budget</label><span class="val" id="o_budget"></span></div><input type="range" id="i_budget" min="1000" max="50000" step="500" value="5000"></div>
       </div>
@@ -69,7 +69,7 @@
         <div class="out-grid">
           <div class="out"><div class="l">Players who convert</div><div class="v" id="r_conv"></div></div>
           <div class="out"><div class="l">Theo per player</div><div class="v" id="r_theo"></div></div>
-          <div class="out"><div class="l">Cashback per player</div><div class="v" id="r_cb"></div></div>
+          <div class="out"><div class="l">Bonus per player</div><div class="v" id="r_cb"></div></div>
           <div class="out"><div class="l">Clawback per player</div><div class="v" id="r_claw"></div></div>
           <div class="out hl"><div class="l">Net cost per player</div><div class="v" id="r_net"></div></div>
           <div class="out hl"><div class="l">Total net cost</div><div class="v" id="r_total"></div></div>
